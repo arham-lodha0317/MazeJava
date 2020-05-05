@@ -9,5 +9,3 @@ During runtime the Maze class does:
 1. Creates a simplified graph datastructure, with extraneous nodes eradicated like nodes that have only 2 neighbors and some common dead ends
 2. Does search algorithm
 3. Returns given search algorithm's picture.
-
-The pictures were gotten from Computerphiles mazes. 
