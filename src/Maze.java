@@ -400,6 +400,12 @@ public class Maze {
         Point left;
         Point right;
 
+        private double upWeight;
+        private double downWeight;
+        private double leftWeight;
+        private double rightWeight;
+
+
         Point(int x, int y){
             this.x = x;
             this.y = y;
@@ -468,6 +474,14 @@ public class Maze {
         @Override
         public String toString() {
             return y + " " + x;
+        }
+
+        public double calculateDistance(Point p){
+            double changeinX = Math.pow(x - p.x, 2);
+            double chaneginY = Math.pow(y - p.y,2);
+
+            return Math.sqrt(chaneginY + changeinX);
+
         }
     }
 
